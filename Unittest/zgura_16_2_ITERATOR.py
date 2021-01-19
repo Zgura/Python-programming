@@ -3,6 +3,7 @@
 класса)"""
 
 import math
+import time
 
 
 class Iterator:
@@ -36,12 +37,15 @@ class Iterator:
         return a
 
 
-# x_1 = Iterator(4)
+start_time = time.time()
+# x_1 = Iterator(7)
+# print(next(x_1))
+# print(next(x_1))
 # print(next(x_1))
 # print(next(x_1))
 # print(next(x_1))
 # print(next(x_1))
 # print(next(x_1))
 
-
-# print(Iterator.test_now(4))  # статический метод можно вызыввать без создания экземпляра
+print(Iterator.test_now(10000))  # статический метод можно вызыввать без создания экземпляра
+print(time.time() - start_time)
